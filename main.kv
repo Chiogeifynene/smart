@@ -1,0 +1,16 @@
+HelloGame:
+
+<HelloGame>:
+    FloatLayout:
+        size: root.size
+        pos: root.pos
+        Label:
+            size_hint: 0.1, 0.1
+            pos_hint: {"x": 0.5, "y": 0.4}
+            text: str(root.score)
+            font_size: "20dp"
+        Button:
+            text: "click"
+            size_hint: 0.1, 0.1
+            pos_hint: {"x": 0.3, "y": 0.4}
+            on_release: root.increase()
